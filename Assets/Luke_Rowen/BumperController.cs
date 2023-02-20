@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,5 +15,11 @@ public class BumperController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.GetComponent<BallController>()) {
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 20000f);
+        }
     }
 }

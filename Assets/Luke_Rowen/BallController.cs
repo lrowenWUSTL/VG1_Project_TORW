@@ -9,15 +9,13 @@ public class BallController : MonoBehaviour
     Rigidbody _rb;
 
     public float speed;
-
-    private float _boostTime = 1f;
-
-    private float _boostEnd;
+    
+    public float boostEnd;
     // Start is called before the first frame update
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
-        _boostEnd = Time.time;
+        boostEnd = Time.time;
     }
 
     // Update is called once per frame
@@ -42,26 +40,9 @@ public class BallController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space)) {
             _rb.AddForce(Vector3.up * speed * Time.deltaTime);
         }
-    }
-
-    private void OnCollisionEnter(Collision collision) {
-        print(">>> " + collision.gameObject.name);
-
-        if(collision.gameObject.GetComponent<BoosterController>()) {
-            _boostEnd = Time.time + _boostTime;
-            speed = 1750f;
-        }
-
-        if (Time.time > _boostEnd) {
+        
+        if (Time.time > boostEnd) {
             speed = 1000f;
-        }
-
-        if (collision.gameObject.GetComponent<Backstop>()) {
-            _rb.ResetInertiaTensor();
-        }
-
-        if (collision.gameObject.GetComponent<BumperController>()) {
-            _rb.AddForce(Vector3.up * 20000f);
         }
     }
 }
