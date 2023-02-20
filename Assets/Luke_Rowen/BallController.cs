@@ -37,10 +37,6 @@ public class BallController : MonoBehaviour
             _rb.AddForce(Vector3.right * speed * Time.deltaTime);
         }
 
-        if (Input.GetKey(KeyCode.Space)) {
-            _rb.AddForce(Vector3.up * speed * Time.deltaTime);
-        }
-        
         if (Time.time > boostEnd) {
             speed = 1000f;
         }
