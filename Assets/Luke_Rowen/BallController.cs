@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour {
     public float speed;
+    public float maxVelocity;
     public float boostEnd;
 
     private float _baseSpeed;
@@ -17,6 +18,7 @@ public class BallController : MonoBehaviour {
         _rb = GetComponent<Rigidbody>();
         boostEnd = Time.time;
         _baseSpeed = speed;
+        _rb.maxLinearVelocity = maxVelocity;
     }
 
     // Update is called once per frame
@@ -25,5 +27,7 @@ public class BallController : MonoBehaviour {
         if (Time.time > boostEnd) {
             speed = _baseSpeed;
         }
+        
+        print(_rb.velocity.magnitude);
     }
 }
