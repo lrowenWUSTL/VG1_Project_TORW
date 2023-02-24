@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="926c4528-a93f-4523-9e2b-dbea3ac92cb1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/Backstop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/Backstop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ball.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BoosterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BoosterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BumperController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BumperController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/CameraController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/CameraController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Luke_Rowen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Luke_Rowen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrackRace.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrackRace.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
@@ -16,6 +18,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Luke_Rowen/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,6 +94,8 @@
       <updated>1676328865011</updated>
       <workItem from="1676328867089" duration="1969000" />
       <workItem from="1676862085893" duration="622000" />
+      <workItem from="1676934973484" duration="729000" />
+      <workItem from="1677223087999" duration="10746000" />
     </task>
     <servers />
   </component>

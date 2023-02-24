@@ -23,7 +23,7 @@ public class BoosterController : MonoBehaviour
         if(collision.gameObject.GetComponent<BallController>()) {
             BallController ball = collision.gameObject.GetComponent<BallController>();
             ball.boostEnd = Time.time + _boostTime;
-            ball.speed = 1750f;
+            ball.speed *= 1.75f;
         }
     }
 }
