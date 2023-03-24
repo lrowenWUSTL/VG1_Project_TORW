@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="926c4528-a93f-4523-9e2b-dbea3ac92cb1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
