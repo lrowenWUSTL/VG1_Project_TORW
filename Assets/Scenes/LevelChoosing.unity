@@ -1301,7 +1301,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 586162380}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: track1
+        m_MethodName: track2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1435,7 +1435,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 586162380}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: track1
+        m_MethodName: track4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1569,7 +1569,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 586162380}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: track1
+        m_MethodName: track3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
