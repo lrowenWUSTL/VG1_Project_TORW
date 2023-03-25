@@ -8,7 +8,27 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(1);
+    }
+
+    public void track1()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void track2()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void track3()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void track4()
+    {
+        SceneManager.LoadScene(5);
     }
 
 }
