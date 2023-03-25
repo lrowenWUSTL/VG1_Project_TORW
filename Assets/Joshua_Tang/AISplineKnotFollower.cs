@@ -49,7 +49,7 @@ public class AISplineKnotFollower : MonoBehaviour
     void updateVelocity()
     {
         Vector3 velocity = new Vector3(waypointToBallVec.x, 0, waypointToBallVec.z);
-        ballRB.AddForce(velocity * Time.deltaTime * speed);
+        ballRB.AddForce(velocity * Time.deltaTime * speed * 10);
         if (ballRB.velocity.magnitude > maxSpeed)
         {
             ballRB.velocity = ballRB.velocity.normalized * maxSpeed;
