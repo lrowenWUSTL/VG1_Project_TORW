@@ -27,6 +27,8 @@ public class BallController : MonoBehaviour {
         if (Time.time > boostEnd) {
             speed = _baseSpeed;
         }
+
+        _rb.velocity += Vector3.down * 10f;
         
         print(_rb.velocity.magnitude);
     }
