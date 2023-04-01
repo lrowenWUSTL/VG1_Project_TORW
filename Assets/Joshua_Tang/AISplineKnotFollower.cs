@@ -59,9 +59,6 @@ public class AISplineKnotFollower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Knot");
-        Debug.Log(knotIndex);
-        Debug.Log(waypointToBallVec.sqrMagnitude);
         checkKnotUpdateVec();
         updateVelocity();
     }
