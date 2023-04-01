@@ -26,10 +26,10 @@ public class SplineMethodsTesting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(transform.position, ((Vector3)(knots[0].Position)+splineTransition-ball.transform.position) * .2f);
+        //Debug.DrawRay(transform.position, ((Vector3)(knots[0].Position)+splineTransition-ball.transform.position) * .2f);
         //Debug.Log((Vector3)(knots[0].Position));
         //Debug.Log(ball.transform.position);
-        Debug.Log((Vector3)(knots[0].Position)-ball.transform.position);
+        //Debug.Log((Vector3)(knots[0].Position)-ball.transform.position);
         //Debug.DrawRay(transform.position, knots[0].TangentOut);
 
     }
