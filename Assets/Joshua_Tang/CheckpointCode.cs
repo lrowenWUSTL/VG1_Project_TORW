@@ -30,9 +30,10 @@ public class CheckpointCode : MonoBehaviour
         
         if (other.gameObject.GetComponent<BallController>())
         {
-            Debug.Log("hi" + hasPassed);
+            //Debug.Log("hi" + hasPassed);
             hasPassed = true;
         }
     }
 
 }
+
