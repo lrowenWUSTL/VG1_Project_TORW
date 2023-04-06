@@ -18,7 +18,8 @@ public class BaseBorder : MonoBehaviour
     {
         if (other.gameObject.GetComponent<BallController>())
         {
-            logic.showGameOverUI();
+            other.transform.position = other.gameObject.GetComponent<BallController>().respawnPoint;
+            other.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
         }
     }
 
