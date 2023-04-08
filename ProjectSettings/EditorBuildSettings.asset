@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 33c80b79c3955c44b9e2fcf95e909818
+  - enabled: 1
+    path: Assets/Scenes/LevelChoosing.unity
+    guid: c2ffdca14a307444c850cbdc206ab98f
+  - enabled: 1
     path: Assets/Scenes/Complete_Map.unity
     guid: 704342daf2181477e8b979c50b35131e
+  - enabled: 1
+    path: Assets/Scenes/Full House Map.unity
+    guid: ca183c93916894745b158a34b6e118bf
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 3e78bb26ffc794fb4ac6232ce1031ee7
+  - enabled: 1
+    path: Assets/Scenes/TrackRace.unity
+    guid: 012c2c24bcb494b0a9a46d2c7ce54f15
   m_configObjects: {}

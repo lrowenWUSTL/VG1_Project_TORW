@@ -14,6 +14,11 @@ public class LogicScript : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void backToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void showGameOverUI()
     {
         gameOverUI.SetActive(true);
