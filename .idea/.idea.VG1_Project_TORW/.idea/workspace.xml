@@ -4,10 +4,9 @@
     <list default="true" id="926c4528-a93f-4523-9e2b-dbea3ac92cb1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Complete_Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Complete_Map.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BoosterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BoosterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BumperController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BumperController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/SpeedTrapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/SpeedTrapController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +92,7 @@
       <workItem from="1677223087999" duration="10746000" />
       <workItem from="1677274011015" duration="312000" />
       <workItem from="1679705699468" duration="3028000" />
+      <workItem from="1680881617193" duration="1940000" />
     </task>
     <servers />
   </component>

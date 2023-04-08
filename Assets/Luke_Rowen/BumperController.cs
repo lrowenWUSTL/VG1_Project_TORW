@@ -18,8 +18,11 @@ public class BumperController : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.GetComponent<BallController>()) {
-            collision.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 20000f);
-        }
+        if (!collision.gameObject.GetComponent<BallController>()) return;
+
+        Rigidbody ballRB = collision.gameObject.GetComponent<Rigidbody>();
+        ballRB.AddForce(Vector3.up * 20f, ForceMode.Acceleration);
+
+        collision.gameObject.GetComponent<BallController>().StartCoroutine("resetEffects");
     }
 }
