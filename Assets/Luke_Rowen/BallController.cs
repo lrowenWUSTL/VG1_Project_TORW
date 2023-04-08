@@ -9,6 +9,7 @@ public class BallController : MonoBehaviour {
     public float speed;
     public float maxVelocity;
     public float boostEnd;
+    public Vector3 respawnPoint;
 
     private float _baseSpeed;
 
@@ -22,7 +23,9 @@ public class BallController : MonoBehaviour {
         boostEnd = Time.time;
         _baseSpeed = speed;
         _rb.maxLinearVelocity = maxVelocity;
+        respawnPoint = transform.position;
         _startingMaxVelocity = maxVelocity;
+
     }
 
     // Update is called once per frame
