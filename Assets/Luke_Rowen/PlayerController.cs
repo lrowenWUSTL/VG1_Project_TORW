@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject ball;
+    public float speedScale;
 
     public float rotationSpeed;
 
@@ -16,7 +17,7 @@ public class PlayerController : MonoBehaviour
     private Quaternion _origionalLocalRotation;
     
     Rigidbody _ballRB; 
-    float _speed; 
+    float _speed;
     void Start() {
         ballTransform = ball.transform;
         _origionalLocalPosition = ballTransform.localPosition;
@@ -43,21 +44,21 @@ public class PlayerController : MonoBehaviour
         Vector3 euler = transform.rotation.eulerAngles;
         
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) {
-            _ballRB.velocity += transform.forward * _speed;
+            _ballRB.AddForce(transform.forward * _speed * speedScale, ForceMode.Acceleration);
         }
         
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) {
-            _ballRB.velocity += -transform.forward * _speed;
+            _ballRB.AddForce(-transform.forward * _speed * speedScale, ForceMode.Acceleration);
         }
         
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
             transform.rotation = Quaternion.Euler(euler.x, euler.y - (rotationSpeed * Time.deltaTime), euler.z);
-            _ballRB.velocity += -transform.right * _speed * 0.2f;
+            _ballRB.AddForce(-transform.right * _speed * 0.2f * speedScale, ForceMode.Acceleration);
         }
         
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) {
             transform.rotation = Quaternion.Euler(euler.x, euler.y + (rotationSpeed * Time.deltaTime), euler.z);
-            _ballRB.velocity += transform.right * _speed * 0.2f;
+            _ballRB.AddForce(transform.right * _speed * 0.2f * speedScale, ForceMode.Acceleration);
         }
     }
     

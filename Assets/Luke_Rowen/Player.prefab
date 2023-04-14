@@ -212,9 +212,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384dad4d50797bf47bdb2e2575b83904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 25
   maxVelocity: 20
   boostEnd: 0
+  respawnPoint: {x: 0, y: 0, z: 0}
 --- !u!54 &2444091283883871053
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -302,4 +303,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 2444091283883871095}
+  speedScale: 10
   rotationSpeed: 100
