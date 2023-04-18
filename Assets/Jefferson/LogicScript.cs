@@ -45,13 +45,25 @@ public class LogicScript : MonoBehaviour
 
     public void continueGame()
     {
-        Time.timeScale = 0;
         setGamePauseUI(false);
     }
 
     public bool isPaused()
     {
         return paused;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape) && gamePauseUI != null)
+        {
+            setGamePauseUI(true);
+        }
+
+        /*        if (Input.GetKey(KeyCode.Escape) && logic.isPaused())
+                {
+                    logic.setGamePauseUI(false);
+                }*/
     }
 
 }

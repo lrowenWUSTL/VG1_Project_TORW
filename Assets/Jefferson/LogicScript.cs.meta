@@ -4,8 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - gameOverUI: {fileID: 6123245638373965337, guid: 1f1c2e21791faad48a9fcd6fd0b3624b, type: 3}
-  - gamePauseUI: {fileID: 861823228654707868, guid: ee8ccc0a55eaf3c45b7550a20bae4011, type: 3}
+  - gameOverUI: {instanceID: 0}
+  - gamePauseUI: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
