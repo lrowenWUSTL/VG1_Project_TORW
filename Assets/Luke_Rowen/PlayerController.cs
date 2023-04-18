@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     public GameObject ball;
     public float speedScale;
+    public LogicScript logic;
 
     public float rotationSpeed;
 
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         
         _ballRB = ball.GetComponent<Rigidbody>();
         _speed = ball.GetComponent<BallController>().speed;
+        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     // Update is called once per frame
@@ -60,6 +62,16 @@ public class PlayerController : MonoBehaviour
             transform.rotation = Quaternion.Euler(euler.x, euler.y + (rotationSpeed * Time.deltaTime), euler.z);
             _ballRB.AddForce(transform.right * _speed * 0.2f * speedScale, ForceMode.Acceleration);
         }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            logic.setGamePauseUI(true);
+        }
+
+/*        if (Input.GetKey(KeyCode.Escape) && logic.isPaused())
+        {
+            logic.setGamePauseUI(false);
+        }*/
     }
     
 }
