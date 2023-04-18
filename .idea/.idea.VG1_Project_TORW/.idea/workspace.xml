@@ -6,9 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="926c4528-a93f-4523-9e2b-dbea3ac92cb1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VG1_Project_TORW/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/Special Roads/Booster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/Special Roads/Booster.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BoosterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BoosterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/BumperController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/BumperController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luke_Rowen/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luke_Rowen/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Full House Map.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Full House Map.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Maze.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Maze.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TrackRace.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TrackRace.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,27 +35,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "jefferson__wang",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jefferson__wang&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\luker\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\luker\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\luker\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\luker\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\luker\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\luker\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.3f1\Editor\Unity.exe" />
@@ -112,7 +118,10 @@
       <workItem from="1679705699468" duration="3028000" />
       <workItem from="1680881617193" duration="1940000" />
       <workItem from="1681332005610" duration="65000" />
-      <workItem from="1681495200289" duration="818000" />
+      <workItem from="1681495200289" duration="1158000" />
+      <workItem from="1681770737954" duration="32000" />
+      <workItem from="1681807073654" duration="2568000" />
+      <workItem from="1681811628684" duration="861000" />
     </task>
     <servers />
   </component>
