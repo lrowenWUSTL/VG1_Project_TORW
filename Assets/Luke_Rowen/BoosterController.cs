@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class BoosterController : MonoBehaviour {
     private float _boostTime = 2f;
-    public float boostStrength;
 
     // Start is called before the first frame update
     void Start() {
@@ -16,16 +15,12 @@ public class BoosterController : MonoBehaviour {
     }
 
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.GetComponent<BallController>() && boostStrength > 0 ) {
-            Rigidbody ballRB = collision.gameObject.GetComponent<Rigidbody>();
-            collision.gameObject.GetComponent<BallController>().maxVelocity *= boostStrength;
+        if (!collision.gameObject.GetComponent<BallController>()) return;
 
-            Vector3 forward = collision.gameObject.GetComponentInParent<Transform>().forward;
-            forward = new Vector3(forward.x, 0, forward.z);
-            
-            ballRB.AddForce(forward * boostStrength, ForceMode.Acceleration);
+        Rigidbody ballRB = collision.gameObject.GetComponent<Rigidbody>();
+        ballRB.maxLinearVelocity *= 1.75f;
+        ballRB.velocity *= 1.75f;
 
-            collision.gameObject.GetComponent<BallController>().StartCoroutine("resetEffects");
-        }
+        collision.gameObject.GetComponent<BallController>().StartCoroutine("resetEffects");
     }
 }

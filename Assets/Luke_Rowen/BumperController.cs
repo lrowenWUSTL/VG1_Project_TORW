@@ -3,15 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BumperController : MonoBehaviour {
-    public float bumperStrength;
+public class BumperController : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     private void OnCollisionEnter(Collision collision) {
-        if (collision.gameObject.GetComponent<BallController>()) {
-            Rigidbody ballRB = collision.gameObject.GetComponent<Rigidbody>();
-            ballRB.AddForce(Vector3.up * bumperStrength, ForceMode.Acceleration);
+        if (!collision.gameObject.GetComponent<BallController>()) return;
 
-            collision.gameObject.GetComponent<BallController>().StartCoroutine("resetEffects");
-        }
+        Rigidbody ballRB = collision.gameObject.GetComponent<Rigidbody>();
+        ballRB.AddForce(Vector3.up * 20f, ForceMode.Acceleration);
+
+        collision.gameObject.GetComponent<BallController>().StartCoroutine("resetEffects");
     }
 }
