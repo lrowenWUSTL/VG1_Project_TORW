@@ -55,12 +55,10 @@ public class PlayerController : MonoBehaviour
         
         if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) {
             transform.rotation = Quaternion.Euler(euler.x, euler.y - (rotationSpeed * Time.deltaTime), euler.z);
-            _ballRB.AddForce(-transform.right * _speed * 0.2f * speedScale, ForceMode.Acceleration);
         }
         
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) {
             transform.rotation = Quaternion.Euler(euler.x, euler.y + (rotationSpeed * Time.deltaTime), euler.z);
-            _ballRB.AddForce(transform.right * _speed * 0.2f * speedScale, ForceMode.Acceleration);
         }
 
         if (Input.GetKey(KeyCode.Escape))
