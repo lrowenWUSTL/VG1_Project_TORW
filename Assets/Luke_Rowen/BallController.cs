@@ -14,6 +14,11 @@ public class BallController : MonoBehaviour {
     private float _baseSpeed;
 
     private float _startingMaxVelocity;
+    public float speedBoost = 2f;
+    public float velocityBoost = 1.5f;
+    public float sizeBoost = 1.5f;
+    public float yDuration = 3f;
+    public float yBoost = 5f;
     
     private Rigidbody _rb;
     // Start is called before the first frame update
@@ -42,7 +47,55 @@ public class BallController : MonoBehaviour {
         CheckMaxVelocity();
         _rb.useGravity = true;
     }
+    public void ApplyRandomBoost(float duration)
+    {
+        int randomBoost = UnityEngine.Random.Range(1, 5);
+        switch (randomBoost)
+        {
+            case 1:
+                StartCoroutine(speedBoostCoroutine(duration));
+                break;
+            case 2:
+                StartCoroutine(VelocityCoroutine(duration));
+                break;
+            case 3:
+                StartCoroutine(SizeBoostCoroutine(duration));
+                break;
+            case 4:
+                StartCoroutine(YBoostCoroutine(yDuration));
+                break;
+        }
+    }
+    private IEnumerator speedBoostCoroutine(float duration)
+    {
+        speed *= speedBoost;
+        yield return new WaitForSeconds(duration);
+        speed = _baseSpeed;
+    }
 
+    private IEnumerator VelocityCoroutine(float duration)
+    {
+        maxVelocity *= velocityBoost;
+        yield return new WaitForSeconds(duration);
+        maxVelocity = _startingMaxVelocity;
+    }
+
+    private IEnumerator SizeBoostCoroutine(float duration)
+    {
+        transform.localScale *= sizeBoost;
+        yield return new WaitForSeconds(duration);
+        transform.localScale /= sizeBoost;
+    }
+
+    private IEnumerator YBoostCoroutine(float duration)
+    {
+        float endTime = Time.time + duration;
+        while (Time.time < endTime)
+        {
+            _rb.velocity = new Vector3(_rb.velocity.x, yBoost, _rb.velocity.z);
+            yield return null;
+        }
+    }
     void CheckMaxVelocity() {
         float x = _rb.velocity.x;
         float y = _rb.velocity.y;
