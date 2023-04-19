@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2444091282823879070}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2444091284625546572}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &2444091282823879067
 Camera:
   m_ObjectHideFlags: 0
@@ -207,6 +207,11 @@ MonoBehaviour:
   maxVelocity: 20
   boostEnd: 0
   respawnPoint: {x: 0, y: 0, z: 0}
+  speedBoost: 2
+  velocityBoost: 1.5
+  sizeBoost: 1.5
+  yDuration: 3
+  yBoost: 5
 --- !u!54 &2444091283883871053
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -247,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 0}
+  gamePauseUI: {fileID: 0}
 --- !u!1 &2444091284625546573
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,4 +301,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 2444091283883871095}
   speedScale: 10
+  logic: {fileID: 0}
   rotationSpeed: 100
