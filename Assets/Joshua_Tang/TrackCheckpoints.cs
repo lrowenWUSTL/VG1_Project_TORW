@@ -14,13 +14,12 @@ public class TrackCheckpoints : MonoBehaviour
     public LogicScript logic;
     public TMP_Text lapCount;
 
-    private int lapsCompleted = 1;
+    private int lapsCompleted;
     private CheckpointCode finalCheckpointComponent;
     // Start is called before the first frame update
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        lapsCompleted = 0;
+        lapsCompleted = 1;
         finalCheckpointComponent = finalCheckpoint.GetComponent<CheckpointCode>();
     }
 
@@ -52,6 +51,7 @@ public class TrackCheckpoints : MonoBehaviour
 
         if (lapsCompleted > totalLaps)
         {
+            lapsCompleted = 1;
             logic.showGameWonUI();
         }
     }
