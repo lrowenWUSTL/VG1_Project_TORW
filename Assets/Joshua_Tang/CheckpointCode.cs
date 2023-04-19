@@ -7,7 +7,7 @@ public class CheckpointCode : MonoBehaviour
     public bool hasPassed;
     public Material passed;
     public Material notPassed;
-
+    public float Duration = 2f;
     private Vector3 respawnPoint;
     private Transform child;
     void Start()
@@ -38,6 +38,7 @@ public class CheckpointCode : MonoBehaviour
             //Debug.Log("hi" + hasPassed);
             hasPassed = true;
             other.gameObject.GetComponent<BallController>().respawnPoint = respawnPoint;
+            other.gameObject.GetComponent<BallController>().ApplyRandomBoost(Duration);
         }
     }
 
