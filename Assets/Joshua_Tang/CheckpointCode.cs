@@ -9,21 +9,23 @@ public class CheckpointCode : MonoBehaviour
     public Material notPassed;
 
     private Vector3 respawnPoint;
+    private Transform child;
     void Start()
     {
         hasPassed = false;
         respawnPoint = new Vector3(transform.position.x, transform.position.y + 15, transform.position.z);
+        child = gameObject.transform.GetChild(0);
     }
 
     private void Update()
     {
         if(hasPassed == false)
         {
-            GetComponent<MeshRenderer>().material = notPassed;
+            child.GetComponent<MeshRenderer>().material = notPassed;
         }
         else
         {
-            GetComponent<MeshRenderer>().material = passed;
+            child.GetComponent<MeshRenderer>().material = passed;
         }
     }
 
