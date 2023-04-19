@@ -21,10 +21,13 @@ public class AISplineKnotFollower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        splineTransition = new Vector3(6.19693f, 0.09999847f, -94.1002f);
+        //splineTransition = new Vector3(6.19693f, 0.09999847f, -94.1002f);
+        Debug.Log(splineContainer.transform.position);
         spline = splineContainer.Spline;
+        splineTransition = splineContainer.transform.position;
         knots = spline.ToArray();
         knotCount = knots.Length;
+        knotIndex = 0;
         waypointCompleteDist = 10.0f;
         waypointToBallVec = (Vector3)(knots[0].Position) + splineTransition - ball.transform.position;
         ballRB = ball.GetComponent<Rigidbody>();
