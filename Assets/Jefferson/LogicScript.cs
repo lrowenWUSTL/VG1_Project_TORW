@@ -9,6 +9,7 @@ public class LogicScript : MonoBehaviour
 
     public GameObject gameOverUI;
     public GameObject gamePauseUI;
+    public GameObject gameWonUI;
 
     bool paused = false;
 
@@ -30,6 +31,12 @@ public class LogicScript : MonoBehaviour
         gameOverUI.SetActive(true);
     }
 
+    public void showGameWonUI()
+    {
+        Time.timeScale = 0;
+        gameWonUI.SetActive(true);
+    }
+
     public void setGamePauseUI(bool state)
     {
         gamePauseUI.SetActive(state);
@@ -37,7 +44,8 @@ public class LogicScript : MonoBehaviour
         if (state)
         {
             Time.timeScale = 0;
-        } else
+        }
+        else
         {
             Time.timeScale = 1;
         }
@@ -45,13 +53,25 @@ public class LogicScript : MonoBehaviour
 
     public void continueGame()
     {
-        Time.timeScale = 0;
         setGamePauseUI(false);
     }
 
     public bool isPaused()
     {
         return paused;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape) && gamePauseUI != null)
+        {
+            setGamePauseUI(true);
+        }
+
+        /*        if (Input.GetKey(KeyCode.Escape) && logic.isPaused())
+                {
+                    logic.setGamePauseUI(false);
+                }*/
     }
 
 }

@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
         
         _ballRB = ball.GetComponent<Rigidbody>();
         _speed = ball.GetComponent<BallController>().speed;
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
     }
 
     // Update is called once per frame

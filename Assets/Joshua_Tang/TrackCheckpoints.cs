@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 
 public class TrackCheckpoints : MonoBehaviour
 {
@@ -10,14 +10,14 @@ public class TrackCheckpoints : MonoBehaviour
     public GameObject finalCheckpoint;
     public int totalLaps;
     public LogicScript logic;
+    public TMP_Text lapCount;
 
     private int lapsCompleted;
     private CheckpointCode finalCheckpointComponent;
     // Start is called before the first frame update
     void Start()
     {
-        logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-        lapsCompleted = 0;
+        lapsCompleted = 1;
         finalCheckpointComponent = finalCheckpoint.GetComponent<CheckpointCode>();
     }
 
@@ -44,9 +44,13 @@ public class TrackCheckpoints : MonoBehaviour
             }
             //Debug.Log(lapsCompleted);
         }
-        if(lapsCompleted >= totalLaps)
+
+        if (lapsCompleted > totalLaps)
         {
-            logic.showGameOverUI();
+            lapsCompleted = 1;
+            logic.showGameWonUI();
         }
+
+        lapCount.text = "Lap #" + lapsCompleted.ToString();
     }
 }
