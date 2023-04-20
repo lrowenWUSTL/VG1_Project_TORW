@@ -45,12 +45,17 @@ public class TrackCheckpoints : MonoBehaviour
             //Debug.Log(lapsCompleted);
         }
 
+        lapCount.text = "Lap #" + lapsCompleted.ToString() + " of " + totalLaps;
+
         if (lapsCompleted > totalLaps)
         {
             lapsCompleted = 1;
+            lapCount.text = "Lap #" + totalLaps + " of " + totalLaps;
             logic.showGameWonUI();
+        } else
+        {
+            lapCount.text = "Lap #" + lapsCompleted.ToString() + " of " + totalLaps;
         }
 
-        lapCount.text = "Lap #" + lapsCompleted.ToString();
     }
 }
