@@ -43124,7 +43124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6548a57ddc554374d91dc87aa68ac65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  logic: {fileID: 0}
+  logic: {fileID: 7163612711026637443}
 --- !u!65 &986265252
 BoxCollider:
   m_ObjectHideFlags: 0
