@@ -19,6 +19,7 @@ public class BaseBorder : MonoBehaviour
         if (other.gameObject.GetComponent<BallController>())
         {
             other.transform.position = other.gameObject.GetComponent<BallController>().respawnPoint;
+            other.transform.rotation = other.gameObject.GetComponent<BallController>().respawnRotation;
             other.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
         }
     }

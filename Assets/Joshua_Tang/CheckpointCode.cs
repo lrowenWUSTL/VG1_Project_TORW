@@ -9,11 +9,13 @@ public class CheckpointCode : MonoBehaviour
     public Material notPassed;
     public float Duration = 2f;
     private Vector3 respawnPoint;
+    private Quaternion respawnRotation;
     private Transform child;
     void Start()
     {
         hasPassed = false;
         respawnPoint = new Vector3(transform.position.x, transform.position.y + 15, transform.position.z);
+        respawnRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
         child = gameObject.transform.GetChild(0);
     }
 
@@ -38,6 +40,7 @@ public class CheckpointCode : MonoBehaviour
             //Debug.Log("hi" + hasPassed);
             hasPassed = true;
             other.gameObject.GetComponent<BallController>().respawnPoint = respawnPoint;
+            other.gameObject.GetComponent<BallController>().respawnRotation = respawnRotation;
             other.gameObject.GetComponent<BallController>().ApplyRandomBoost(Duration);
         }
     }
