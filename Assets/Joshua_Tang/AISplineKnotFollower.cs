@@ -22,7 +22,6 @@ public class AISplineKnotFollower : MonoBehaviour
     void Start()
     {
         //splineTransition = new Vector3(6.19693f, 0.09999847f, -94.1002f);
-        Debug.Log(splineContainer.transform.position);
         spline = splineContainer.Spline;
         splineTransition = splineContainer.transform.position;
         knots = spline.ToArray();
