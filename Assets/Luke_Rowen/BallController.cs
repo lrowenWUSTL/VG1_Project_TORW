@@ -10,6 +10,7 @@ public class BallController : MonoBehaviour {
     public float maxVelocity;
     public float boostEnd;
     public Vector3 respawnPoint;
+    public Quaternion respawnRotation;
 
     private float _baseSpeed;
 
@@ -29,6 +30,7 @@ public class BallController : MonoBehaviour {
         _baseSpeed = speed;
         // _rb.maxLinearVelocity = maxVelocity;
         respawnPoint = transform.position;
+        respawnRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
         _startingMaxVelocity = maxVelocity;
 
     }
@@ -62,7 +64,7 @@ public class BallController : MonoBehaviour {
                 StartCoroutine(SizeBoostCoroutine(duration));
                 break;
             case 4:
-                StartCoroutine(YBoostCoroutine(yDuration));
+                //StartCoroutine(YBoostCoroutine(yDuration));
                 break;
         }
     }
